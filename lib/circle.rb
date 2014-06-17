@@ -8,8 +8,9 @@ class Circle
   def area
     Math::PI * (radius ** 2)
   end
-  #def circumference(radius)
-   # @radius = radius
-    #circumference =
+
+  def circumference
+    2 * Math::PI * radius
+  end
 
 end

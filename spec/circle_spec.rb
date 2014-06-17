@@ -15,11 +15,10 @@ describe Circle do
     end
   end
 
-
-  #describe '#circumference' do
-  #  it 'calculates the circumference' do
-  #    expect(circle.circumference).to eq 62.8
-  #  end
-  #end
+  describe '#circumference' do
+    it 'calculates the circumference' do
+      expect(circle.circumference).to be_within(0.001).of(31.415)
+    end
+  end
 
 end
